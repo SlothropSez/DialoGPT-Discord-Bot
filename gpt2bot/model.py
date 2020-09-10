@@ -20,15 +20,18 @@ logger = logging.getLogger(__name__)
 # Model configuration files
 CONFIG_FILE = {
     'small': 'https://convaisharables.blob.core.windows.net/lsp/117M/config.json',
-    'medium': 'https://convaisharables.blob.core.windows.net/lsp/345M/config.json'
+    'medium': 'https://convaisharables.blob.core.windows.net/lsp/345M/config.json',
+    'large': 'https://raw.githubusercontent.com/microsoft/DialoGPT/master/configs/762M/config.json'
 }
 VOCAB_FILE = {
     'small': 'https://convaisharables.blob.core.windows.net/lsp/117M/vocab.json',
-    'medium': 'https://convaisharables.blob.core.windows.net/lsp/345M/vocab.json'
+    'medium': 'https://convaisharables.blob.core.windows.net/lsp/345M/vocab.json',
+    'large': 'https://raw.githubusercontent.com/microsoft/DialoGPT/master/configs/762M/vocab.json'
 }
 MERGE_FILE = {
     'small': 'https://convaisharables.blob.core.windows.net/lsp/117M/merges.txt',
-    'medium': 'https://convaisharables.blob.core.windows.net/lsp/345M/merges.txt'
+    'medium': 'https://convaisharables.blob.core.windows.net/lsp/345M/merges.txt',
+    'large': 'https://raw.githubusercontent.com/microsoft/DialoGPT/master/configs/762M/merges.txt'
 }
 
 # Model files
@@ -38,7 +41,8 @@ LSP_MODEL_URL = {
         'medium_fs': 'https://convaisharables.blob.core.windows.net/lsp/multiref/medium_fs.pkl',
         'medium_ft': 'https://convaisharables.blob.core.windows.net/lsp/multiref/medium_ft.pkl',
         'small_fs': 'https://convaisharables.blob.core.windows.net/lsp/multiref/small_fs.pkl',
-        'small_ft': 'https://convaisharables.blob.core.windows.net/lsp/multiref/small_ft.pkl'
+        'small_ft': 'https://convaisharables.blob.core.windows.net/lsp/multiref/small_ft.pkl',
+        'large_ft': 'https://convaisharables.blob.core.windows.net/lsp/multiref/large_ft.pkl'
     },
     'dstc': { # medium_ft.pkl is actually a small model
         'small_ft': 'https://convaisharables.blob.core.windows.net/lsp/DSTC/medium_ft.pkl'
